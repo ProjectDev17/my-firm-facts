@@ -1,0 +1,39 @@
+.button {
+    font-size: 16px;
+    color: black;
+    background-color: transparent;
+    border: none;
+    padding: 10px 20px;
+    cursor: pointer;
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    transition: background-color 0.3s, color 0.3s;
+  
+    // Botón por defecto
+    &.default {
+      &:hover {
+        background-color: #CCCCCC; // Gris claro
+      }
+    }
+  
+    // Botón con icono
+    &.icon {
+      display: flex;
+      align-items: center;
+      gap: 10px;
+  
+      // Añade aquí un estilo específico para el icono, si lo necesitas
+  
+      &:hover {
+        background-color: #CCCCCC; // Gris claro
+      }
+    }
+  
+    // Estado deshabilitado
+    &.disabled {
+      color: #AAAAAA; // Gris
+      cursor: not-allowed;
+    }
+  }
+  

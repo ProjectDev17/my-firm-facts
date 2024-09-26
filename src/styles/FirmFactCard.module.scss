@@ -1,0 +1,20 @@
+.card {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border: 2px solid transparent;
+  padding: 20px;
+  transition: background-color 0.3s ease, border-color 0.3s ease;
+  background-color: #000000;
+  &.default {
+    &:hover {
+      background-color: #00ff00; // Verde
+    }
+  }
+
+  &.border {
+    &:hover {
+      border-color: #00ff00; // Verde
+    }
+  }
+}
